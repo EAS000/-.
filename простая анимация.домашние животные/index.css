@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    background: url("1.jpg");
+    font-family: 'Roboto', sans-serif;
+}
+
+#заголовок {
+    margin-right: 300px;
+    margin-left: 300px;
+   background-color: #FFD700;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin-right: 300px;
+    margin-left: 300px;
+    justify-content: space-around;
+    background-color: #4682B4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart {
+    width: 4cm;
+    height: 4cm;
+    margin: 40px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 4cm;
+    height: 4cm;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 4cm;
+    height: 4cm;
+}
+
+.front {
+    background-color: #FFD700;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color: aquamarine;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.cart:hover {
+    transform: rotateY(180deg);
+}
+
+.aaa {
+    display: flex;
+    flex-direction: row;
+}
+
+
